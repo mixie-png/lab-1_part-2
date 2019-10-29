@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    margin-top: 5px;
+}
+
+.button1, .button2 {
+    background-color: #000;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+}
+    
+.button1 {
+    width: 100%;
+}
+
+.button2 {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+
+.circleContainer {
+    display: none;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+html {
+    background-color: #F9FAFD;
+    height: 100%;
+    margin: 30px;
+}
+
+.menu ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+p {
+    border-left: 6px solid gray;
+    padding: 5px;
+}
+
+
+@media (min-width: 768px) {
+    .button1, .button2 {
+        width: auto;
+    }
+
+    .button2 {
+        bottom: 0;
+    }
+
+    .circleContainer {
+        display: flex;
+        box-sizing: border-box;
+        position: relative;
+        flex: 1;
+    }
+    
+    .circle1 {
+        height: 300px;
+        width: 300px;
+        background-color: rgba(247, 136, 167, 0.6);
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        right: 100px;
+    }
+    
+    .circle2 {
+        height: 200px;
+        width: 200px;
+        background-color: rgba(247, 193, 162, 0.7);
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        top: 175px;
+        right: 20px;        
+    }
+    
+    .circle3 {
+        height: 150px;
+        width: 150px;
+        background-color: rgba(207, 130, 213, 0.6);
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        left: 500px;
+        top: 50px;
+    }
+
+    header {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .paragraph {
+        flex: 1;
+    }
+
+    .menu ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+}
